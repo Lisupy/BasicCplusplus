@@ -36,11 +36,12 @@ int main(int argc, char *argv[]){
     double b;
     double theta_deg;
 
-    std::cout << "Enter the semi-major axis (a):" << std::ends;
+    // comment the prompt when upload to mimir
+    // std::cout << "Enter the semi-major axis (a):" << std::endl;
     std::cin >> a;
-    std::cout << "Enter the semi-minor axis (b):" << std::ends;
+    // std::cout << "Enter the semi-minor axis (b):" << std::endl;
     std::cin >> b;
-    std::cout << "Enter the true anomaly in degree (θ):" << std::ends;
+    // std::cout << "Enter the true anomaly in degree (θ):" << std::endl;
     std::cin >>theta_deg;
 
     double theta_rad = deg2rad(theta_deg);
@@ -53,7 +54,7 @@ int main(int argc, char *argv[]){
     double r = sqrt( x*x + y*y );
 
     std::cout << scientific << setprecision(2) << e << std::endl;
-    std::cout << fixed << setprecision(1) << E_deg << "°" << std::endl;
+    std::cout << fixed << setprecision(1) << E_deg << std::endl;
     std::cout << scientific << setprecision(2) << r << std::endl;
     std::cout << scientific << setprecision(2) 
               << x << " " << y << std::endl;
