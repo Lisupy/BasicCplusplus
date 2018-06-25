@@ -1,0 +1,5 @@
+#include "FifoMap.h"
+
+
+
+FifoMap::FifoMap(): m_map(), m_keylist() {}
